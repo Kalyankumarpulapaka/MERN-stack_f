@@ -19,8 +19,8 @@ const sendWelcomeEmail = (email, name) => {
     let info = transporter.sendMail({
         from: '"CEO" <shreyaspoojary240@gmail.com>', // sender address
         to: email, // list of receivers
-        subject: "Welcome to the app ", // Subject line
-        text: `Welcome to the app, ${name}.Let me know how you like the app`, // plain text body
+        subject: "Welcome to the app. ", // Subject line
+        text: `Welcome to the app, ${name}.Let me know how you like the app, and don't forget to drink hot water`, // plain text body
     });
     console.log(email)
 }

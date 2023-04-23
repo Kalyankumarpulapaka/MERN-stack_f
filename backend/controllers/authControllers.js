@@ -2,6 +2,8 @@ const User = require("../models/User");
 const bcrypt = require("bcrypt");
 const { createAccessToken } = require("../utils/token");
 const { validateEmail } = require("../utils/validation");
+const { sendWelcomeEmail, sendCancellationEmail } = require("../email/account");
+
 
 
 exports.signup = async (req, res) => {
@@ -30,6 +32,7 @@ exports.signup = async (req, res) => {
 
     const hashedPassword = await bcrypt.hash(password, 10);
     await User.create({ name, email, password: hashedPassword });
+    await sendWelcomeEmail(email, name);
     res.status(200).json({ msg: "Congratulations!! Account has been created for you.." });
   }
   catch (err) {
