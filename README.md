@@ -12,10 +12,7 @@ git clone https://github.com/SHREYK213/MERN-stack_TaskHive
 ```
 ## Install the dependencies:
 ``` bash
-cd backend
-npm install
-cd frontend
-npm install
+npm install all
 ```
 ## Create a .env file in the project root directory and set the following environment variables:
 ``` bash
