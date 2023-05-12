@@ -4,24 +4,22 @@
 
 ## Requirements
 Node.js (version 12 or later)
-MongoDB (version 4 or later)
 ## Installation
 ### Clone the repository:
 ```
 git clone https://github.com/SHREYK213/MERN-stack_TaskHive
 ```
 ## Install the dependencies:
-``` bash
-npm install all
+```bash
+npm install-all
 ```
 ## Create a .env file in the project root directory and set the following environment variables:
-``` bash
-Copy code
+```
 PORT=3000
 MONGODB_URI=
 ```
 ## Start the server:
-``` bash
+```bash
 npm run dev
 ```
 Access the app at http://localhost:3000.
