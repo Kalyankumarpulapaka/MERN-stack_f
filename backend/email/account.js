@@ -17,7 +17,7 @@ let transporter = nodemailer.createTransport({
 const sendWelcomeEmail = (email, name) => {
     // send mail with defined transport object
     let info = transporter.sendMail({
-        from: '"CEO" <shreyaspoojary240@gmail.com>', // sender address
+        from: '"CEO" Your EmailID', // sender address
         to: email, // list of receivers
         subject: "Welcome to the app. ", // Subject line
         text: `Welcome to the app, ${name}.Let me know how you like the app, and don't forget to drink hot water`, // plain text body
