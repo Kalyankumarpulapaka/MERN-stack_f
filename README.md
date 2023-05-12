@@ -15,8 +15,10 @@ npm install-all
 ```
 ## Create a .env file in the project root directory and set the following environment variables:
 ```
-PORT=3000
-MONGODB_URI=
+MONGODB_URL = your-mongodb-url
+ACCESS_TOKEN_SECRET = Rj2S?RVe9[]8-dCS6A**&b5Tsg$gwbg~Bd{*QTK
+SMTP_USER=
+SMTP_PASS=
 ```
 ## Start the server:
 ```bash
